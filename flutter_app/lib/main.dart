@@ -6,14 +6,37 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new Container(
-      decoration: new BoxDecoration(color: Colors.white),
-      child: new Center(
-        child: new Text('Hello world',
-          textDirection: TextDirection.ltr,
-          style: new TextStyle(fontSize: 40.0, color: Colors.black87)
-        )
-      ),
+    return new MaterialApp(
+      home: new Container(
+          decoration: new BoxDecoration(color: Colors.white),
+          child: new Counter()
+      )
+    );
+  }
+}
+
+class Counter extends StatefulWidget {
+  @override
+  _CounterState createState() => new _CounterState();
+}
+
+class _CounterState extends State<Counter> {
+  int _counter = 0;
+
+  void _increment() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return new Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: <Widget>[
+        new RaisedButton(onPressed: _increment, child: new Text('Increment'), textColor: Colors.black,),
+        new Text('Count: $_counter'),
+      ]
     );
   }
 }
