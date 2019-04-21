@@ -1,7 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'shopping_list.dart';
 
-void main() => runApp(new MyApp());
+//void main() => runApp(new MyApp());
+
+// TODO: test
+void main() {
+  runApp(MaterialApp(
+    title: 'Shopping App',
+    home: ShoppingList(
+      products: <Product>[
+        Product(name: 'Eggs'),
+        Product(name: 'Flour'),
+        Product(name: 'Chocolate chips'),
+      ],
+    ),
+  ));
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
