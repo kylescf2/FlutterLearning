@@ -5,18 +5,33 @@ import 'shopping_list.dart';
 //void main() => runApp(new MyApp());
 
 // TODO: test
+//void main() {
+//  runApp(MaterialApp(
+//    title: 'Shopping App',
+//    home: ShoppingList(
+//      products: <Product>[
+//        Product(name: 'Eggs'),
+//        Product(name: 'Flour'),
+//        Product(name: 'Chocolate chips'),
+//      ],
+//    ),
+//  ));
+//}
+
 void main() {
-  runApp(MaterialApp(
-    title: 'Shopping App',
-    home: ShoppingList(
-      products: <Product>[
-        Product(name: 'Eggs'),
-        Product(name: 'Flour'),
-        Product(name: 'Chocolate chips'),
-      ],
-    ),
+  runApp(CupertinoApp(
+    home: new Container(
+        decoration: new BoxDecoration(
+            border: new Border.all(width: 2.0, color: Colors.red),
+            borderRadius: new BorderRadius.all(new Radius.circular(20.0)),
+            color: Colors.grey
+        ),
+        child: buildColumn()
+    )
   ));
 }
+
+///
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -55,4 +70,26 @@ class _CounterState extends State<Counter> {
       ]
     );
   }
+}
+
+Widget buildRow() {
+  return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Image.asset('images/pic1.jpg'),
+        Image.asset('images/pic2.jpg'),
+        Image.asset('images/pic3.jpg'),
+      ]
+  );
+}
+
+Widget buildColumn() {
+  return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Image.asset('images/pic1.jpg'),
+        Image.asset('images/pic2.jpg'),
+        Image.asset('images/pic3.jpg'),
+      ]
+  );
 }
