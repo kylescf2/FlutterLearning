@@ -26,7 +26,7 @@ void main() {
             borderRadius: new BorderRadius.all(new Radius.circular(20.0)),
             color: Colors.grey
         ),
-        child: buildColumn()
+        child: buildRow()
     )
   ));
 }
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new CupertinoApp(
+    return new MaterialApp(
       home: new Container(
           decoration: new BoxDecoration(color: Colors.white),
           child: new Counter()
@@ -74,12 +74,14 @@ class _CounterState extends State<Counter> {
 
 Widget buildRow() {
   return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        Image.asset('images/pic1.jpg'),
-        Image.asset('images/pic2.jpg'),
-        Image.asset('images/pic3.jpg'),
-      ]
+    mainAxisSize: MainAxisSize.max,
+    children: [
+      Icon(Icons.star, color: Colors.green[500]),
+      Icon(Icons.star, color: Colors.green[500]),
+      Icon(Icons.star, color: Colors.green[500]),
+      Icon(Icons.star, color: Colors.black),
+      Icon(Icons.star, color: Colors.black),
+    ],
   );
 }
 
