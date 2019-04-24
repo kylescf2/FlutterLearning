@@ -248,7 +248,15 @@ Widget buildRect() {
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
       const SizedBox(width: 10.0),
-      Text("Hello World!")
+      Text("Hello World!"),
+      SizedBox(
+        width: 150,
+        height: 150,
+        child: Container(
+          color: Colors.blue,
+          child: Image.asset("images/pic1.jpg"),
+        )
+      ),
     ],
   );
 }
