@@ -244,11 +244,11 @@ Widget buildColumn() {
 }
 
 Widget buildRect() {
-  return Padding(
-    padding: EdgeInsets.only(left: 30, top: 50),
-    child: SizedBox(
-      width: 100,
-      height: 50,
-      child: Text('Hello World!')
-    ));
+  return Row(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: <Widget>[
+      const SizedBox(width: 10.0),
+      Text("Hello World!")
+    ],
+  );
 }
