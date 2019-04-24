@@ -245,10 +245,12 @@ Widget buildColumn() {
 
 Widget buildRect() {
   return Row(
-    crossAxisAlignment: CrossAxisAlignment.start,
+    mainAxisAlignment: MainAxisAlignment.end,
+    crossAxisAlignment: CrossAxisAlignment.end,
     children: <Widget>[
       const SizedBox(width: 10.0),
       Text("Hello World!"),
+      const SizedBox(width: 20.0),
       SizedBox(
         width: 150,
         height: 150,
