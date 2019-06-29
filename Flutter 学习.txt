@@ -1,0 +1,33 @@
+1、 点击计数，StatefulWidget
+
+2、Shopping list 示例,  已看
+
+3、编写一个列表， 包含文字和图片
+  界面参照 fish redux的例子
+   图片列表页
+
+
+布局的示例, 在Flutter 中构建布局的教程
+ 看到 常用widgets
+
+Padding的使用
+ 放置位置的调整，多个子view的位置,  ok
+
+
+
+
+备注：
+StatefulWidget
+  State Object 是框架创建和持有的
+
+原理：
+Flex boxes: Row 和 Column的理解
+  render box的概念
+
+Positioned 待看
+Container 宽高设置
+
+----- 
+6.22 查看网页教程- Flutter基础控件
+ 类图可以参考下
+ Container 的用法
