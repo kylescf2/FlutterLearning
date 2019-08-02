@@ -29,7 +29,7 @@ Flex boxes: Row 和 Column的理解
   
 
 
-Positioned 待看
+Positioned  已用
 Container 宽高设置
 Stack
 
@@ -39,4 +39,6 @@ Stack
  Container 的用法
  需要熟悉各个widget 的布局规则
 
- 在给定的区域 添加 UI 元素 
+ 在给定的区域 添加 UI 元素， ok
+
+
