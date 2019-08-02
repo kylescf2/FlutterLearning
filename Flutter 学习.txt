@@ -20,14 +20,23 @@ Padding的使用
 StatefulWidget
   State Object 是框架创建和持有的
 
-原理：
+布局原理：
+Box constraints 概念
+RenderBox
+  Flutter中的许多盒子，特别是那些只包含一个子widget的，都会将其约束传递给他们的孩子
+
 Flex boxes: Row 和 Column的理解
-  render box的概念
+  
+
 
 Positioned 待看
 Container 宽高设置
+Stack
 
 ----- 
 6.22 查看网页教程- Flutter基础控件
  类图可以参考下
  Container 的用法
+ 需要熟悉各个widget 的布局规则
+
+ 在给定的区域 添加 UI 元素 

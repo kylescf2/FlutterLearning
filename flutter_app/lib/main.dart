@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'shopping_list.dart';
+import 'home_page.dart';
 
 void main() => runApp(new FooApp());
 
-// TODO: test
+// 列表示例
 //void main() {
 //  runApp(MaterialApp(
 //    title: 'Shopping App',
@@ -22,28 +23,9 @@ void main() => runApp(new FooApp());
 class FooApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
+    return MaterialApp(
         title: 'Flutter layout demo',
-        home: new Stack(
-          children: <Widget>[Positioned(
-              left: 40,
-              bottom: 10,
-//            decoration: new BoxDecoration(color: Colors.white),
-              child: buildContainer(context)
-          ),
-
-          Positioned(
-              left: 40,
-              bottom: 100,
-//            decoration: new BoxDecoration(color: Colors.white),
-              child: buildContainer(context)
-          )
-
-          ],
-        )
-
-
-
+        home: HomePage()
     );
   }
 }
@@ -96,14 +78,4 @@ Widget buildColumn() {
         Image.asset('images/pic3.jpg'),
       ]
   );
-}
-
-Widget buildContainer(BuildContext context) {
-  var container_test = Container(
-    width: 200,
-    height: 10.0,
-    decoration: BoxDecoration(color: Colors.red),
-  );
-
-  return container_test;
 }
