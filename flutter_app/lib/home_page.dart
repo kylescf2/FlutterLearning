@@ -27,7 +27,7 @@ class HomePageState extends State<HomePage> {
   Widget _getBody() {
     return Container(
       decoration: BoxDecoration(color: Colors.grey),
-      child: _buildContent()
+      child: _buildTestCase()
     );
   }
 
@@ -142,11 +142,22 @@ Widget _buildTestCase() {
 
 //包裹一下，收工
   var test2 = Container(
-      width: 300,
+      width: 350,
       height: 70,
       color: Colors.white,
       padding: EdgeInsets.all(5),
       child: rowLine2);
 
-  return test2;
+  var testListView = ListView.builder(
+    itemCount: 30,
+    itemBuilder: (BuildContext context, int index) {
+      return
+        Column(children: <Widget>[test2, Divider(height:1)]);
+    },
+  );
+
+  return testListView;
 }
+
+//条目2
+
