@@ -15,7 +15,6 @@ Padding的使用
 
 
 
-
 备注：
 StatefulWidget
   State Object 是框架创建和持有的
@@ -40,5 +39,11 @@ Stack
  需要熟悉各个widget 的布局规则
 
  在给定的区域 添加 UI 元素， ok
+
+-----
+8.4 布局的实例编写
+
+
+
 
 
