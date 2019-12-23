@@ -7,43 +7,14 @@
    图片列表页
 
 
-布局的示例, 在Flutter 中构建布局的教程
- 看到 常用widgets
-
-Padding的使用
- 放置位置的调整，多个子view的位置,  ok
-
-
-
 备注：
 StatefulWidget
   State Object 是框架创建和持有的
-
-布局原理：
-Box constraints 概念
-RenderBox
-  Flutter中的许多盒子，特别是那些只包含一个子widget的，都会将其约束传递给他们的孩子
-
-Flex boxes: Row 和 Column的理解
   
+StatelessWidget和StatefulWidget就是两个用于组合Widget的基类，
+  它们本身并不关联最终的渲染对象（RenderObjectWidget）
 
-
-Positioned  已用
-Container 宽高设置
-Stack
-
------ 
-6.22 查看网页教程- Flutter基础控件
- 类图可以参考下
- Container 的用法
- 需要熟悉各个widget 的布局规则
-
- 在给定的区域 添加 UI 元素， ok
 
 -----
-8.4 布局的实例编写
-
-
-
-
+12.23  Flutter 实战，查看 Ch3 - 7
 
