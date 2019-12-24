@@ -4,8 +4,8 @@
 
 3、编写一个列表， 包含文字和图片
   界面参照 fish redux的例子
-   图片列表页
 
+  
 
 备注：
 StatefulWidget
@@ -14,7 +14,14 @@ StatefulWidget
 StatelessWidget和StatefulWidget就是两个用于组合Widget的基类，
   它们本身并不关联最终的渲染对象（RenderObjectWidget）
 
+Window
+  与操作系统交互的接口
+
+WidgetsBinding   widget层与engine的桥梁
 
 -----
-12.23  Flutter 实战，查看 Ch3 - 7
+12.23  Flutter 实战，查看 Ch3 - 7，已看
 
+ 几个基础类，已看
+ 
+ 基础控件的网页查看
